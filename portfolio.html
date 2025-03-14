@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="container">
+            
+            <nav>
+                <img src="Claudia.png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+               <div class="header-content">
+                <img src="dp1.jpeg" alt="Profile Picture" class="profile-image">
+                <div class="text-content">
+                <p>Pre-Final Year Student</p>
+                <h1>Hi, I am  <span>Nitya</span><br>from Dehradun</h1>
+                </div>
+               </div>
+            </div>
+        </div>
+    </header>
+
+        <!------section about me----->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-me-image">
+                        <img src="dp1.jpeg" class="b">
+                    </div>
+
+
+                        <div class="about-me-content">
+                        <h2>About Me</h2>
+                        <p>Hi! I'm Nitya, a Computer Science and Engineering student at Graphic Era University with a passion for software development and emerging technologies. I’m always eager to explore new tools, 
+                        frameworks, and innovations to enhance my skills and stay ahead in the tech world.</p>
+                  
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills-set',event)">Skills</p>
+                        <p class="tab-links" onclick="opentab ('experience',event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                      </div>
+                    
+
+                    <div class="tab-contents active-tab" id="skills-set">
+                      
+                        <ul>
+                            <li><span>Programming Languages</span><br>JavaScript, Python, C++</li>
+                            <li><span>Web Development</span><br>HTML, CSS, React.js, Node.js</li>
+                            <li><span>Database Management</span><br> MySQL, MongoDB</li>
+                            <li><span>Version Control</span><br> Git, GitHub</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="experience">
+                        
+                        <ul>
+                            <li><span>Jan 2025-March 2025</span><br>Freelance Web Developer at CodSoft.com</li>
+                            <li><span>Collabrations</span>Collaborating with developers to enhance user experience on digital platforms</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="education">
+                       
+                        <ul>
+                            <li><span>2019-2020</span><br>Secondary Education at Sophia Girls' Senior Secondary, Saharanpur</li>
+                            <li><span>2021-2022</span><br>Senior Secondary Education at Sophia Girls' Senior Secondary, Saharanpur</li>
+                            <li><span>2022-2026</span><br>Btech Computer Science and Engineering at Graphic Era University, Dehradun</li>
+                        </ul>
+                    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+        <!---------------Skills---------------------->
+
+        <div id="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-content">
+                    <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FrontEnd Development</h2>
+                    <ul>
+                        <li class="icon"><i class="fa-brands fa-html5"></i><span>Html</span></li>
+                        <li class="icon"><i class="fa-brands fa-css"></i><span>CSS</span></li>
+                        <li class="icon"><i class="fa-brands fa-js"></i><Span>Javascript</Span></li>
+                        <li class="icon"><i class="fa-brands fa-react"></i><span>React</span></li>
+                    </ul>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>BackEnd Development</h2>
+                        <ul>
+                            <li class="icon"><i class="fa-brands fa-node-js"></i><span>Node js</span></li>
+                            <li class="icon"><i class="fa-brands fa-python"></i><span>Python</span></li>
+                            <li class="icon"><i class="fa-brands fa-java"></i><Span>Java</Span></li>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>DataBase Management</h2>
+                        <ul>
+                            <li class="icon"><i class="fa-solid fa-server"></i><span>MySQL</span></li>
+                            <li class="icon"><i class="fa-solid fa-server"></i><span>MongoDB</span></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-tools"></i>
+                        <h2>Version Control</h2>
+                        <ul>
+                            <li class="icon"><i class="fa-brands fa-git"></i><span>Git</span></li>
+                            <li class="icon"><i class="fa-brands fa-github"></i><span>GitHub</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------projects----------------------------------------------->
+
+        <div id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-content">
+                    <div class="project">
+                        <img src="detecting-malware.png" alt="Project 1" />
+                        <div class="project-info">
+                            <h3>Project Title 1</h3>
+                            <p>Developed a machine learning model to classify Android software as malware or benign using a dataset of 100,000
+                                observations and 35 features.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="cwebsite.jpg" alt="Project 2" />
+                        <div class="project-info">
+                            <h3>Project Title 2</h3>
+                            <p>Built a clone of ecommerce website using Html and css</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="pwebsite.jpg" alt="Project 3" />
+                        <div class="project-info">
+                            <h3>Project Title 3</h3>
+                            <p>Built a responsive website using HTML, CSS, and JavaScript</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-----------------------------------Contact------------------------------>
+
+        <div id="contact">
+            <div class="container">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nityabudhraja555@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/testgithubrit11189"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nitya-b-39b17b256/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="myForm">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea rows="6" name="message" id="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+               </div> 
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169; Nitya. <i class="fa-solid fa-heart"></i> Keep it cool</p>
+        </div>
+    </div>
+    </header>
+    <script src="portfolio.js"></script>
+</body>
+</html>
